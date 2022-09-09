@@ -1,0 +1,124 @@
+body {
+    background-color: lightgreen;
+  }
+  
+  @media   (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .example {background: red;}
+  }
+  
+  
+  /* @media only screen and (orientation: landscape) {
+    body {
+      background-color: lightblue;
+    }
+  } */
+  .example {
+    padding: 20px;
+    color: white;
+  }
+  /* Extra small devices (phones, 600px and down) */
+  /* @media only screen and (max-width: 600px) { */
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .example {background: green;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .example {background: blue;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .example {background: orange;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .example {background: pink;}
+  }
+  div.example1 {
+    background-color: yellow;
+    padding: 10px;
+    padding-bottom: 80px;
+    height: 150px;
+  }
+  
+  /* @media screen and (max-width: 600px) {
+    div.example1 {
+      display: none;
+    }
+  } */
+  @media screen and (min-width: 600px) {
+    div.example1 {
+      font-size: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    div.example1 {
+      font-size: 20px;
+    }
+}
+
+  .column {
+    /* float: left; */
+    width: 40%;
+    padding: 20px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* On screens that are 992px wide or less, go from four columns to two columns */
+  @media screen and (max-width: 992px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+
+@media((min-width:300px) and (max-width:600px)){
+  body{
+    background-color: red;
+  }
+  h1{
+    font-size: 10px;
+  }
+}
+@media((min-width:600px) and (max-width:800px)){
+  body{
+    background-color: yellowgreen;
+  }
+  h1{
+    font-size: 30px;
+  }
+}
+@media((min-width:800px) and (max-width:1000px)){
+  body{
+    background-color: orange;
+  }
+  h1{
+    font-size: 60px;
+  }
+}
+
+
+
+
+
+
+
+
